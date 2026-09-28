@@ -1,3 +1,11 @@
+:root {
+  --color-bg: #f8f7f4;
+  --color-ink: #000000;
+  --color-navbar-bg: #e8ece8;
+  --color-accent: #4f6f5f;
+  --color-accent-dark: #3f5b4d;
+}
+
 body {
   font-family:
     system-ui,
@@ -6,14 +14,14 @@ body {
     Roboto,
     Arial,
     sans-serif;
-  background-color: #f8f7f4;
+  background-color: var(--color-bg);
 }
 
 h1,
 h2 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 800;
-  color: #000000;
+  color: var(--color-ink);
 }
 
 h1 {
@@ -35,9 +43,10 @@ h4,
 }
 
 .navbar {
-  background-color: #e8ece8;
+  background-color: var(--color-navbar-bg);
   padding: 15px 20px;
 }
+
 .profile-image {
   width: 250px;
   height: 300px;
@@ -66,21 +75,21 @@ h4,
 }
 
 .journey-button {
-  background-color: #4f6f5f;
-  border-color: #4f6f5f;
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
 }
 
 .journey-button:hover {
-  background-color: #3f5b4d;
-  border-color: #3f5b4d;
+  background-color: var(--color-accent-dark);
+  border-color: var(--color-accent-dark);
 }
 
 .journey-details {
-  border-left: 5px solid #4f6f5f;
+  border-left: 5px solid var(--color-accent);
 }
 
 #journey-title {
-  color: #000000;
+  color: var(--color-ink);
 }
 
 footer {
@@ -88,13 +97,13 @@ footer {
 }
 
 .footer-link {
-  color: #4f6f5f;
-  border: 1px solid #4f6f5f;
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
 }
 
 .footer-link:hover {
   color: white;
-  background-color: #4f6f5f;
+  background-color: var(--color-accent);
 }
 
 .experience-intro {
